@@ -1,0 +1,326 @@
+<?php
+   ob_start();
+   session_start();
+?>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+    <!-- Indicators -->
+    <!-- <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol> -->
+
+    <!-- Wrapper for slides -->
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/01.jpg" alt="Chania" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/02.jpg" alt="Chania" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="img/03.jpg" alt="Flower" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/04.jpg" alt="Flower" width="460" height="345">
+      </div>
+       
+       <div class="item">
+        <img src="img/05.jpg" alt="Flower" width="460" height="345">
+      </div>
+       
+       <div class="item">
+        <img src="img/06.jpg" alt="Flower" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="img/07.jpg" alt="Flower" width="460" height="345">
+      </div>
+ 
+    </div>
+
+    <!-- Left and right controls -->
+     <div class="carousel-caption">
+          <h3>Sell $</h3>
+          <p>Money Money.</p>
+        </div>      
+      </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    <!-- <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image"> -->
+       
+
+      <!-- <div class="item"> -->
+        <!-- <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image"> -->
+      
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+  
+<div class="container text-center">    
+  <h3>What We Do</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="img/nature.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>nature</p>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="img/lights.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>lights</p>    
+    </div>
+     <div class="col-sm-4"> 
+      <img src="img/fjords.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>fjords</p>    
+    </div>
+<!--     <div class="col-sm-4">
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+       <div class="well">
+       <p>Some text..</p>
+      </div>
+
+      </div> -->
+
+  </div>
+</div><br>
+
+<div class="container">
+  <h2>MY profile</h2>
+  <p>Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+  <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+  
+  <!-- Left-aligned media object -->
+  <div class="media">
+    <div class="media-left">
+      <img src="img/img_avatar1.png" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Left-aligned</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Right-aligned media object -->
+  <div class="media">
+    <div class="media-body">
+      <h4 class="media-heading">Right-aligned</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="media-right">
+      <img src="img/img_avatar1.png" class="media-object" style="width:60px">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Dropdowns</h2>
+  <p>The .dropdown class is used to indicate a dropdown menu.</p>
+  <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+  <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>                                          
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="https://www.w3schools.com" title="Visit w3schools">w3school.com</a></li>
+      <li><a href="index1.html">index1.html</a></li>
+      <li><a href="insert.html">insert.html</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Image Gallery</h2>
+  <p>The .thumbnail class can be used to display an image gallery.</p>
+  <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+  <p>Click on the images to enlarge them.</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="img/001.jpg" target="_blank">
+          <img src="img/001.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="img/002.jpg" target="_blank">
+         <img src="img/002.jpg" class="img-circle" alt="Cinque Terre" width="100%"> 
+          <!-- <img src="img/002.jpg" alt="Nature" style="width:100%"> -->
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="img/003.jpg" target="_blank">
+          <img src="img/003.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Alert Links</h2>
+  <p>Add the alert-link class to any links inside the alert box to create "matching colored links".</p>
+  <div class="alert alert-success">
+    <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-info">
+    <strong>Info!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-warning">
+    <strong>Warning!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-danger">
+    <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+</div>
+<div class="container">
+  <ul class="pager">
+    <li><a href="work.html">Previous</a></li>
+    <li><a href="index1.html">Next</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <h2><b>대표단 실적도표</b></h2>
+  <p>The .progress-bar-striped class adds stripes to the progress bars:</p> 
+  <div class="progress">
+    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      40% Complete (success)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+      50% Complete (info)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+      60% Complete (warning)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      70% Complete (danger)
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center" >
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>

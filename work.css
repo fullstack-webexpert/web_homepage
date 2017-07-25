@@ -1,0 +1,18 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-image: url("img/nature3.jpg");
+}
+#content{
+	float: left;
+	margin-left: 350px;
+	margin-top: 200px;
+	width: 500px;
+	height: 300px;
+	
+}
+.container{
+	color: #fff;
+}
